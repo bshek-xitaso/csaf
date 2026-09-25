@@ -8,3 +8,4 @@ pub(crate) mod ssvc;
 pub(crate) mod text_check;
 pub(crate) mod validation_schema_urls;
 pub(crate) mod validation_schemas;
+pub(crate) mod vulnerability_notes_with_title_and_category;

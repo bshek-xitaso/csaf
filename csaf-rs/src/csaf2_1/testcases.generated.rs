@@ -919,6 +919,20 @@ crate::macros::define_csaf_test!(
     "mandatory/csaf-rs_csaf-csaf_2_1-6-1-27-19-s11.json")]
 );
 crate::macros::define_csaf_test!(
+    Test6_1_27_20, ValidatorForTest6_1_27_20, ExpectedResults_6_1_27_20, id :
+    "6.1.27.20", doc_type : crate
+    ::schema::csaf2_1::schema::CommonSecurityAdvisoryFramework, version : "V2_1", cases :
+    [(case_01, "01",
+    "../csaf/csaf_2.1/test/validator/data/mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-01.json",
+    "mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-01.json"), (case_02, "02",
+    "../csaf/csaf_2.1/test/validator/data/mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-02.json",
+    "mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-02.json"), (case_11, "11",
+    "../csaf/csaf_2.1/test/validator/data/mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-11.json",
+    "mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-11.json"), (case_12, "12",
+    "../csaf/csaf_2.1/test/validator/data/mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-12.json",
+    "mandatory/oasis_csaf_tc-csaf_2_1-2024-6-1-27-20-12.json")]
+);
+crate::macros::define_csaf_test!(
     Test6_1_28, ValidatorForTest6_1_28, ExpectedResults_6_1_28, id : "6.1.28", doc_type :
     crate ::schema::csaf2_1::schema::CommonSecurityAdvisoryFramework, version : "V2_1",
     cases : [(case_01, "01",
@@ -3033,7 +3047,8 @@ crate::macros::define_test_cases_aggregate!(
     ValidatorForTest6_1_27_16), (test_6_1_27_17, Test6_1_27_17,
     ValidatorForTest6_1_27_17), (test_6_1_27_18, Test6_1_27_18,
     ValidatorForTest6_1_27_18), (test_6_1_27_19, Test6_1_27_19,
-    ValidatorForTest6_1_27_19), (test_6_1_28, Test6_1_28, ValidatorForTest6_1_28),
+    ValidatorForTest6_1_27_19), (test_6_1_27_20, Test6_1_27_20,
+    ValidatorForTest6_1_27_20), (test_6_1_28, Test6_1_28, ValidatorForTest6_1_28),
     (test_6_1_29, Test6_1_29, ValidatorForTest6_1_29), (test_6_1_30, Test6_1_30,
     ValidatorForTest6_1_30), (test_6_1_31, Test6_1_31, ValidatorForTest6_1_31),
     (test_6_1_32, Test6_1_32, ValidatorForTest6_1_32), (test_6_1_33, Test6_1_33,
